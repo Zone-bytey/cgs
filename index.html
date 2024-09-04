@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Practical Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="project" id="prectical1">
+    
+            <div class="code-container">
+                <button class="copy-button">Copy</button>
+                <pre><code class="language-python">
+// Variables to store input values
+var num1:Number = 0;
+var num2:Number = 0;
+
+// Function to capture button input
+function captureInput(value) {
+    if (input1.text == "") {
+        input1.text += value;
+    } else {
+        input2.text += value;
+    }
+}
+
+// Function to perform calculation
+function calculate(operator) {
+    num1 = Number(input1.text);
+    num2 = Number(input2.text);
+    
+    switch (operator) {
+        case "+":
+            result.text = String(num1 + num2);
+            break;
+        case "-":
+            result.text = String(num1 - num2);
+            break;
+        case "*":
+            result.text = String(num1 * num2);
+            break;
+        case "/":
+            result.text = String(num1 / num2);
+            break;
+    }
+}
+
+// Event listeners for number buttons
+btn0.onRelease = function() { captureInput("0"); };
+btn1.onRelease = function() { captureInput("1"); };
+btn2.onRelease = function() { captureInput("2"); };
+btn3.onRelease = function() { captureInput("3"); };
+btn4.onRelease = function() { captureInput("4"); };
+btn5.onRelease = function() { captureInput("5"); };
+btn6.onRelease = function() { captureInput("6"); };
+btn7.onRelease = function() { captureInput("7"); };
+btn8.onRelease = function() { captureInput("8"); };
+btn9.onRelease = function() { captureInput("9"); };
+
+// Event listeners for operator buttons
+btnPlus.onRelease = function() { calculate("+"); };
+btnMinus.onRelease = function() { calculate("-"); };
+btnMultiply.onRelease = function() { calculate("*"); };
+btnDivide.onRelease = function() { calculate("/"); };
+
+// Clear button to reset the inputs and result
+btnClear.onRelease = function() {
+    input1.text = "";
+    input2.text = "";
+    result.text = "";
+};
+
+        </code></pre>
+            </div>
+        </div>
+
+        <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+        <script src="script.js"></script>
+</body>
+
+</html>

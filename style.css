@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .project {
+    margin-bottom: 40px;
+  }
+  
+  .code-container {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden; /* For copy button positioning */
+  }
+  
+  .copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  pre {
+    margin: 0; /* Reset default margin */
+    white-space: pre-wrap; /* Handle long lines without horizontal scroll */
+  }
+  
+  code {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Responsive Styling (for smaller screens) */
+  @media screen and (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    .code-container {
+      font-size: 14px;
+    }
+  }
+  
+  /* Optional: Add syntax highlighting */
+  .language-python {
+    color: #306998; /* Python keyword color */
+  }
+  
+  .language-python .string { 
+    color: #008000; /* String color */
+  }
+  
+  .language-python .function { 
+    color: #0000FF; /* Function color */
+  }
+  /* Add more styles as needed */
+
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.practical {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure button is above other content */
+}
+
+#backToTop:hover {
+    background-color: #555;
+}
